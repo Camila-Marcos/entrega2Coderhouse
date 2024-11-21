@@ -1,0 +1,101 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+/* pagina principal */
+header {
+    background-color: rgb(176, 171, 171);
+}
+h1 {
+    color: white;
+    display: flex;
+    padding: 20px;
+    margin: 0%;
+}
+.navbar{
+    display: flex;
+   
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+.navbar li{
+    margin: 0% 15px;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+.imagenportada{
+    width: 100%;
+    height: 300px;
+}
+footer {
+    background-color:rgb(176, 171, 171);
+    color: white;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    width: 24px;
+}
+/* Acerca de mi */
+main{
+    display: flex;
+}
+.menulateral {
+    padding: 30px;
+}
+.menulateral ul{
+    text-decoration: none;
+    list-style: none;
+}
+.menulateral li{
+    padding: 16px;
+}
+.contenidoprincipal{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: justify;
+    width: 70%;
+}
+.contenidoprincipal h2{
+    padding: 20px 0px;
+}
+.textoimagen{
+    display: flex;
+}
+.textoimagen p{
+    padding: 0px 20px 20px 0px;
+}
+.textoimagen img{
+    width: auto;
+    height: 300px;
+}
+
+/* Portafolio */
+.fotospeques {
+    width: 100px;
+}
+/* Servicios*/
+
+
+/* contacto */
+#nombre{
+    width: 30%;
+}
+#correo{
+    width: 30%;
+}
+#mensaje{
+    width: 30%;
+}
