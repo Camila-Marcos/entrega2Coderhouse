@@ -9,28 +9,22 @@ header {
 h1 {
     color: white;
     display: flex;
-    padding: 20px;
-    margin: 0%;
+    padding: 40px;
+    margin: 0%;    
 }
-.navbar{
-    display: flex;
-   
+nav{
+    background-color: #FFFFFF;
 }
-.navbar ul{
-    display: flex;
-    list-style: none;
-    padding: 0%;
-    margin: 0%;
-}
-.navbar li{
-    margin: 0% 15px;
-}
-.navbar a{
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px;
-    display: block;
-}
+
+
+  
+
+
+
+
+
+
+
 .imagenportada{
     width: 100%;
     height: 300px;
@@ -44,9 +38,7 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-.logo{
-    width: 24px;
-}
+
 /* Acerca de mi */
 main{
     display: flex;
