@@ -3,32 +3,88 @@
     margin: 0%;
 }
 /* pagina principal */
-header {
-    background-color: rgb(176, 171, 171);
+header{
+    grid-area: header;
 }
-h1 {
-    color: white;
-    display: flex;
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+@media (max-width: 576px) {
+    .gridcontainer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+      grid-template-areas:
+        "header"
+        "main"
+        "main"
+        "footer"
+    }
+    .escritoPrincipal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+  }
+  @media (min-width:576px){
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-areas: header 
+                            main 
+                            main                          
+                            footer ;
+    }
+  }
+
+header {
+    background-color: #586A6D;
+}
+.titulo h1 {
+    color: #FFFFFF;
     padding: 40px;
     margin: 0%;    
 }
-nav{
-    background-color: #FFFFFF;
+.cuerpoPrincipal{
+    display: flex;
+    flex-direction: column;
 }
-
-
-  
-
-
-
-
-
-
-
-.imagenportada{
+.imagenAmpliada{
     width: 100%;
-    height: 300px;
+
 }
+.escritoPrincipal{
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.escritoPrincipal p{
+    padding: 20px;   
+    text-align: justify;
+    width: 500px;
+
+}
+.imagenPerfil{
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
 footer {
     background-color:rgb(176, 171, 171);
     color: white;
@@ -37,6 +93,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.logo{
+    width: 24px;
+    height: 24px;
 }
 
 /* Acerca de mi */
