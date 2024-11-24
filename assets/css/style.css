@@ -13,7 +13,6 @@ footer{
     grid-area: footer;
 } */
 
-
 /* @media (max-width: 576px) {
     .gridcontainer {
       display: grid;
@@ -30,7 +29,6 @@ footer{
         flex-direction: column;
         align-items: center;
     }
-    
   }
   @media (min-width:576px){
     .gridcontainer{
@@ -67,10 +65,8 @@ header {
     gap: 30px;
 }
 .escritoPrincipal p{
-      
     text-align: justify;
     width: 400px;
-
 }
 .imagenPerfil{
     width: 400px;
@@ -78,7 +74,6 @@ header {
     padding: 20px;
     align-items: center;
 }
-
 footer {
     background-color:rgb(176, 171, 171);
     color: white;
@@ -92,10 +87,7 @@ footer {
 }
 .redesSociales {
     display: flex;
-
 }
-
-
 .logo{
     width: 24px;
     height: 24px;
@@ -103,15 +95,6 @@ footer {
 
 /* Acerca de mi */
 
-
-
-
-
-
-
-
-
-/* solo hago un grid area de menu porque ya habia hecho el de header main y footer en index */
 .headerOther{
     grid-area: header2;
 }
@@ -174,8 +157,31 @@ footer{
 
 
 /* Portafolio */
-.fotospeques {
-    width: 100px;
+.contenidoPortafolio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.imagenGrande{
+    width: 60%;
+    display: flex;
+    justify-content: start;
+}
+.imagenGrande img{
+    image-resolution: 150px;  
+    width: 700px;
+    padding: 42px;
+}
+.fotosFlex{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+}
+.fotospeques  {
+    width: 200px;
+    padding: 10px;
+}
+.contenidoPortafolio p{
+    padding: 10px 32px;
 }
 /* Servicios*/
 
