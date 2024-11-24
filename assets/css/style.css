@@ -65,9 +65,9 @@ header {
     justify-content: center;
 }
 .escritoPrincipal p{
-    padding: 20px;   
+      
     text-align: justify;
-    width: 500px;
+    width: 400px;
 
 }
 .imagenPerfil{
@@ -77,23 +77,23 @@ header {
     align-items: center;
 }
 
-
-
-
-
-
-
-
-
 footer {
     background-color:rgb(176, 171, 171);
     color: white;
     padding: 0%;
     margin: 0%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
+.contenedorFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.redesSociales {
+    display: flex;
+
+}
+
+
 .logo{
     width: 24px;
     height: 24px;
