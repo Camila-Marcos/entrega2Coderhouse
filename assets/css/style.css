@@ -184,8 +184,17 @@ footer{
     padding: 10px 32px;
 }
 /* Servicios*/
-
-
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+}
+.cardPad{
+    padding: 50px;
+}
+.servicios {
+    padding-left: 18%;
+}
 /* contacto */
 #nombre{
     width: 30%;
