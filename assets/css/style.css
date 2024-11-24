@@ -63,6 +63,7 @@ header {
     padding: 25px;
     align-items: center;
     justify-content: center;
+    gap: 30px;
 }
 .escritoPrincipal p{
       
@@ -100,6 +101,15 @@ footer {
 }
 
 /* Acerca de mi */
+
+
+
+
+
+
+
+
+
 main{
     display: flex;
 }
@@ -133,6 +143,18 @@ main{
     width: auto;
     height: 300px;
 }
+@media (max-width: 576px) {
+    .gridcontainerOther {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+      grid-template-areas:
+        "header"
+        "main"
+        "main"
+        "footer"
+
+
 
 /* Portafolio */
 .fotospeques {
