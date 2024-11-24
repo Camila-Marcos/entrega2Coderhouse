@@ -3,7 +3,7 @@
     margin: 0%;
 }
 /* pagina principal */
-header{
+/* header{
     grid-area: header;
 }
 main{
@@ -11,9 +11,10 @@ main{
 }
 footer{
     grid-area: footer;
-}
+} */
 
-@media (max-width: 576px) {
+
+/* @media (max-width: 576px) {
     .gridcontainer {
       display: grid;
       grid-template-columns: 1fr;
@@ -40,7 +41,7 @@ footer{
                             main                          
                             footer ;
     }
-  }
+  } */
 
 header {
     background-color: #586A6D;
@@ -110,50 +111,66 @@ footer {
 
 
 
-main{
-    display: flex;
+/* solo hago un grid area de menu porque ya habia hecho el de header main y footer en index */
+.headerOther{
+    grid-area: header2;
 }
-.menulateral {
-    padding: 30px;
+.menuLateral {
+    grid-area: menuIzquierdo;
 }
-.menulateral ul{
-    text-decoration: none;
-    list-style: none;
+.contenidoPrincipal{
+    grid-area: main2;
 }
-.menulateral li{
-    padding: 16px;
+footer{
+    grid-area: footer;
 }
-.contenidoprincipal{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    text-align: justify;
-    width: 70%;
-}
-.contenidoprincipal h2{
-    padding: 20px 0px;
-}
-.textoimagen{
-    display: flex;
-}
-.textoimagen p{
-    padding: 0px 20px 20px 0px;
-}
-.textoimagen img{
-    width: auto;
-    height: 300px;
-}
-@media (max-width: 576px) {
-    .gridcontainerOther {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 2fr 1fr;
-      grid-template-areas:
-        "header"
-        "main"
-        "main"
-        "footer"
 
+.gridContainerOther{
+    display: grid;
+    grid-template-columns: 0.6fr 3fr;
+    grid-template-rows: auto 2fr auto;
+    grid-template-areas: "header2 header2"
+                        "menuIzquierdo main2"
+                        "footer footer";
+
+}
+.menuLateral{
+    padding-top: 32px;
+}
+.menuLateral li{
+    list-style: none;
+    padding: 22px;
+}
+.menuLateral a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenidoPrincipal{
+    display: flex;  
+    align-items: center;  
+}
+.textoImagen{
+    width: 50%;
+}
+.imagenAcercaDeMi{
+    width: 50%;
+ }
+.contenidoPrincipal h2{
+    padding-top: 32px;
+}
+.contenidoPrincipal p{
+    padding-top:22px; 
+    padding-right: 32px;
+    padding-bottom: 32px;
+    text-align: justify;
+}
+.imagenAcercaDeMi img{
+    height: 500px;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+}
 
 
 /* Portafolio */
