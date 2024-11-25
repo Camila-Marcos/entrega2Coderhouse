@@ -47,19 +47,24 @@
     </nav>
 
 </header>
-    <main>
-      <h2>Contacto</h2>
-      <!-- Formulario -->
-       <form action="/submit" method="post">
-          <label for="nombre"><p>Nombre</p></label>
-          <input type="text" name="nombre" id="nombre">
-
-          <label for="correo"><p>Correo</p></label>
-          <input type="email" name="correo" id="correo">
-
-          <label for="mensaje"><p>Mensaje</p></label>
-          <textarea name="mensaje" id="mensaje"></textarea>
-       </form>
+    <main class="gridForm">        
+        <div class="formulario">
+          <h2>Contacto</h2>
+      <!-- Formulario Bootstrap -->
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="name" class="form-control" id="exampleFormControlInput1" >
+            </div>     
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" >
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
+            </div>
+        </div>
+      
     </main>
     <footer>
       <div class="contenedorFooter">
@@ -69,8 +74,8 @@
           </div>
           <div class="redesSociales">
               <p>Redes sociales:</p>
-              <img class="logo" src="assets/img/insta.png" alt="logo instagram">
-              <img class="logo" src="assets/img/whatsapp.png" alt="logo whatsapp">
+              <img class="logo" src="/assets/img/insta.png" alt="logo instagram">
+              <img class="logo" src="/assets/img/whatsapp.png" alt="logo whatsapp">
           </div>
 
       </footer>

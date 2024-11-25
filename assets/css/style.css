@@ -2,44 +2,8 @@
     padding: 0%;
     margin: 0%;
 }
-/* pagina principal */
-/* header{
-    grid-area: header;
-}
-main{
-    grid-area: main;
-}
-footer{
-    grid-area: footer;
-} */
 
-/* @media (max-width: 576px) {
-    .gridcontainer {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 2fr 1fr;
-      grid-template-areas:
-        "header"
-        "main"
-        "main"
-        "footer"
-    }
-    .escritoPrincipal{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-  }
-  @media (min-width:576px){
-    .gridcontainer{
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-areas: header 
-                            main 
-                            main                          
-                            footer ;
-    }
-  } */
+
 
 header {
     background-color: #586A6D;
@@ -194,14 +158,45 @@ footer{
 }
 .servicios {
     padding-left: 18%;
+    padding-top: 32px;
 }
 /* contacto */
-#nombre{
-    width: 30%;
+.gridForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "form -";
 }
-#correo{
-    width: 30%;
+.formulario{
+    grid-area: form;
+    padding: 32px;
 }
-#mensaje{
-    width: 30%;
-}
+
+
+/* @media (max-width: 576px) {
+    .gridcontainer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+      grid-template-areas:
+        "header"
+        "main"
+        "main"
+        "footer"
+    }
+    .escritoPrincipal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  @media (min-width:576px){
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-areas: header 
+                            main 
+                            main                          
+                            footer ;
+    }
+  } */
