@@ -12,8 +12,8 @@
 
 <body>
     <div class="gridContainerOther">
-    <header class="headerOther">
-       
+        <header class="headerOther">
+
             <div class="titulo">
                 <h1>Camila Marcos | Artista visual</h1>
             </div>
@@ -58,16 +58,49 @@
                 <li><a href="#">Dibujos</a></li>
             </ul>
         </nav>
+        <!-- imagenes del portafolio -->
+        <main class="contenidoPrincipal">
+            <div class="imagenesParaFormatoPc">
+                <div class="imagenGrande">
+                    <img src="/assets/img/pintura 1.jpg" alt="foto de referencia">
+                </div>
+                <div class="fotosFlex">
+                    <img class="fotospeques" src="/assets/img/detalle1.jpg" alt="foto de referencia">
+                    <img class="fotospeques" src="/assets/img/detalle2.jpg" alt="foto de referencia">
+                    <img class="fotospeques" src="/assets/img/detalle3.jpg" alt="foto de referencia">
+                </div>
+            </div>
 
-        <main class="contenidoPortafolio">
-            <div class="imagenGrande">
-                <img src="/assets/img/pintura 1.jpg" alt="foto de referencia">
+            <!-- carrusel de imagen que se activa en modo celular -->
+            <div class="carruselDeImagenes">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carruselImagenes carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/assets/img/pintura 1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/img/detalle1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/img/detalle2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/img/detalle3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
-            <div class="fotosFlex">
-                <img class="fotospeques" src="/assets/img/detalle1.jpg" alt="foto de referencia">
-                <img class="fotospeques" src="/assets/img/detalle2.jpg" alt="foto de referencia">
-                <img class="fotospeques" src="/assets/img/detalle3.jpg" alt="foto de referencia">
-            </div>
+
 
             <p>Óleo sobre tabla. 200x150 cm</p>
 
@@ -76,7 +109,7 @@
 
         <footer>
             <div class="contenedorFooter">
-                <div>
+                <div class="tituloFooter">
                     <h2>Camila Marcos</h2>
                     <p>correo@gmail.com</p>
                 </div>

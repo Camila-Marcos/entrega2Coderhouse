@@ -3,9 +3,6 @@
     margin: 0%;
 }
 
-
-
-
 .titulo h1 {
     color: #FFFFFF;
     padding: 40px;
@@ -38,7 +35,7 @@
     align-items: center;
 }
 footer {
-    background-color:rgb(176, 171, 171);
+    background-color:#586A6D;
     color: white;
     padding: 0%;
     margin: 0%;
@@ -54,32 +51,9 @@ footer {
 .logo{
     width: 24px;
     height: 24px;
+    margin: 10px;
 }
 
-/* Acerca de mi */
-
-.headerOther{
-    grid-area: header2;
-}
-.menuLateral {
-    grid-area: menuIzquierdo;
-}
-.contenidoPrincipal{
-    grid-area: main2;
-}
-footer{
-    grid-area: footer;
-}
-
-.gridContainerOther{
-    display: grid;
-    grid-template-columns: 0.6fr 3fr;
-    grid-template-rows: auto 2fr auto;
-    grid-template-areas: "header2 header2"
-                        "menuIzquierdo main2"
-                        "footer footer";
-
-}
 .menuLateral{
     padding-top: 32px;
 }
@@ -120,7 +94,7 @@ footer{
 
 
 /* Portafolio */
-.contenidoPortafolio{
+.imagenesParaFormatoPc{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -145,6 +119,9 @@ footer{
 }
 .contenidoPortafolio p{
     padding: 10px 32px;
+}
+.carruselImagenes{
+    width: 400 px;
 }
 /* Servicios*/
 .cards{
@@ -171,7 +148,6 @@ footer{
   
 }
 
-
 /* media queries para inicio y servicios */
 
 header{
@@ -183,6 +159,33 @@ main{
 footer{
     grid-area: footer;
 }
+@media (min-width:576px) {
+    .headerOther{
+        grid-area: header2;
+    }
+    .menuLateral {
+        grid-area: menuIzquierdo;
+    }
+    .contenidoPrincipal{
+        grid-area: main2;
+    }
+    footer{
+        grid-area: footer;
+    }
+    .gridContainerOther{
+        display: grid;
+        grid-template-columns: 1fr 2fr auto;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-areas: "header2 header2 header2"
+                            "menuIzquierdo main2 -"
+                            "footer footer footer";
+    }
+    
+    .carruselDeImagenes{
+        display: none;
+    }
+
+  }
 
 
   @media (max-width:576px){
@@ -218,10 +221,29 @@ footer{
                             "main2"
                             "footer";
     }
+    .imagenesParaFormatoPc{
+        display: none;
+    }
     .imagenAcercaDeMi img{
         display: none;
     }
     .menuLateral{
         display: none;
     }
+    .contenedorFooter {
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+        align-items: center;
+    }
+    .tituloFooter p{
+       text-align: center;
+    }
+   
+    .redesSociales p{
+        display: none;
+    }
+    
   }
+  
+
