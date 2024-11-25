@@ -5,13 +5,12 @@
 
 
 
-header {
-    background-color: #586A6D;
-}
+
 .titulo h1 {
     color: #FFFFFF;
     padding: 40px;
-    margin: 0%;    
+    margin: 0%; 
+    background-color: #586A6D;   
 }
 .cuerpoPrincipal{
     display: flex;
@@ -161,42 +160,68 @@ footer{
     padding-top: 32px;
 }
 /* contacto */
-.gridForm{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "form -";
-}
 .formulario{
     grid-area: form;
-    padding: 32px;
+}
+.gridForm{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "- form auto";
+  
 }
 
 
-/* @media (max-width: 576px) {
-    .gridcontainer {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 2fr 1fr;
-      grid-template-areas:
-        "header"
-        "main"
-        "main"
-        "footer"
+/* media queries para inicio y servicios */
+
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+
+  @media (max-width:576px){
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-areas: "header" 
+                            "main" 
+                            "main"                          
+                            "footer" ;
     }
     .escritoPrincipal{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-  }
-  @media (min-width:576px){
-    .gridcontainer{
+    .gridForm{
         display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-areas: header 
-                            main 
-                            main                          
-                            footer ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-areas: "header"
+                            "form"
+                            "form"
+                            "footer";
     }
-  } */
+    .gridContainerOther{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr ;
+        grid-template-areas: "header2"
+                            "main2"
+                            "main2"
+                            "footer";
+    }
+    .imagenAcercaDeMi img{
+        display: none;
+    }
+    .menuLateral{
+        display: none;
+    }
+  }
